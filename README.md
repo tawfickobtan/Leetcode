@@ -13,14 +13,14 @@ The repository is organized by problem categories and difficulty levels:
 Each solution is stored in its respective folder with the following format:
 
 ```Format
-/<problem_category>/<problem_name>.py
+/<problem_difficulty>/<problem_category>/<problem_name>.py
 ```
 
 For example:
 
 ```Example
-/Arrays/Two_Sum.py
-/Graphs/Shortest_Path_in_Binary_Matrix.py
+/Easy/Arrays/Two_Sum.py
+/Medium/Graphs/Shortest_Path_in_Binary_Matrix.py
 ```
 
 ## Problem Explanation 📝

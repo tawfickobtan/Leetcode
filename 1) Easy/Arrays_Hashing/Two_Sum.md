@@ -30,6 +30,8 @@ You are given an array of integers and a target, and are required to find two in
 
 ## Solution Code 🧩
 
+### Python 🐍
+
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -43,7 +45,25 @@ class Solution:
         return [-1,-1]
 ```
 
----
+### Java 🍵
+
+```Java
+import java.util.HashMap;
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> mymap = new HashMap<>();
+
+        for (int i = 0; i < nums.length;i++){
+            if (mymap.containsKey(target - nums[i])){
+                return new int[] {i, mymap.get(target-nums[i])};
+            }
+            mymap.put(nums[i], i);
+        }
+        return new int[] {-1,-1};
+    }
+}
+```
 
 Whenever you are bored, check out my [LinkedIn profile](https://www.linkedin.com/in/tawfic-kobtan/), [my LeetCode profile](https://leetcode.com/u/tofuegy/), or my [GitHub profile](https://github.com/tawfickobtan), I would appreciate that alot.
 

@@ -23,6 +23,8 @@ We will iterate through the array and will keep track of what numbers we passed 
 
 ## Solution Code 🧩
 
+### Python 🐍
+
 ```python
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -32,6 +34,23 @@ class Solution:
                 return True
             ymset.add(i)
         return False
+```
+
+### Java 🍵
+
+```Java
+import java.util.HashSet;
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> ymset = new HashSet<>();
+
+        for (int num: nums){
+            if (ymset.contains(num)) return true;
+            ymset.add(num);
+        }
+        return false;
+    }
+}
 ```
 
 ---
